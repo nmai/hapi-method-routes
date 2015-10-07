@@ -1,0 +1,22 @@
+{
+  "name": "hapi-method-routes",
+  "version": "1.0.0",
+  "description": "a hapi plugin that exposes server methods via routes",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nmai/hapi-method-routes.git"
+  },
+  "author": "Nick Mai",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nmai/hapi-method-routes/issues"
+  },
+  "homepage": "https://github.com/nmai/hapi-method-routes#readme",
+  "dependencies": {
+    "hapi": "^10.4.0"
+  }
+}
