@@ -1,10 +1,13 @@
 # hapi-method-routes
-a hapi plugin that exposes server methods via routes
+A hapi plugin that exposes server methods via routes.
+
+Please note: For obvious reasons, this module is not published on NPM. This should probably never be used on a production server unless client requests are heavily filtered (and at that point you might as well write a proper REST API).
 
 ## Available options:
 * `endpoint`: must include trailing slash, i.e. '/methods/'
 
 ## Demo:
+If you would like to just run the standalone example server, enter your `hapi-method-routes` root directory and run the following:
 `npm install`   
 `node example/server.js`
 
