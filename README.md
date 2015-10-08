@@ -5,7 +5,7 @@ a hapi plugin that exposes server methods via routes
 * `endpoint`: must include trailing slash, i.e. '/methods/'
 
 ## Demo:
-`npm install`
+`npm install`   
 `node example/server.js`
 
 Then try `localhost:8080/methods/hello` in your browser.
