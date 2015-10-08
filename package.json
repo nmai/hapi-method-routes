@@ -16,7 +16,7 @@
     "url": "https://github.com/nmai/hapi-method-routes/issues"
   },
   "homepage": "https://github.com/nmai/hapi-method-routes#readme",
-  "dependencies": {
+  "devDependencies": {
     "hapi": "^10.4.0"
   }
 }
