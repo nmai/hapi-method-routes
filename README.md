@@ -4,8 +4,14 @@ a hapi plugin that exposes server methods via routes
 ## Available options:
 * `endpoint`: must include trailing slash, i.e. '/methods/'
 
+## Demo:
+`npm install`
+`node example/server.js`
 
-## Example usage (see demo below to launch the live example):
+Then try `localhost:8080/methods/hello` in your browser.
+Alternatively, try `localhost:8080/methods/math.add/[1,6]`
+
+## Example usage:
 ```js
 var Hapi = require('hapi');
 
@@ -42,9 +48,3 @@ server.register([{
 
 });
 ```
-
-## Demo:
-`node example/server.js`
-
-Then try `localhost:8080/methods/hello` in your browser.
-Alternatively, try `localhost:8080/methods/math.add/[1,6]`
