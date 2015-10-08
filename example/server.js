@@ -19,12 +19,11 @@ server.route({
 
 
 //Load all necessary plugins (in this case, just one)
-server.register([require('..')], {}, function (err) {
+server.register([require('..')], {endpoint: 'method123'}, function (err) {
 
 	//Throw any errors
-    if (err) {
+    if (err)
         console.error('Failed to load a plugin:', err);
-    }
 
     //Create a method that returns 'Hello World!'
     server.method('hello', 
@@ -36,6 +35,7 @@ server.register([require('..')], {}, function (err) {
     var add = function (x, y, next) {
 	    next(null, x + y);
 	};
+
     server.method('math.add', add, {});
 
 
