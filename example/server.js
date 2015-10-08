@@ -19,7 +19,10 @@ server.route({
 
 
 //Load all necessary plugins (in this case, just one)
-server.register([require('..')], {endpoint: 'method123'}, function (err) {
+server.register([{
+		register: require('..'), 
+		options: {endpoint: '/methods/'}
+	}], function (err) {
 
 	//Throw any errors
     if (err)
